@@ -32,16 +32,13 @@ const Index = () => {
     // Observe all sections except hero (which is already visible)
     const sections = document.querySelectorAll('section:not(:first-of-type)');
     sections.forEach(section => {
-      section.classList.add('opacity-0');
       observer.observe(section);
     });
     
     return () => {
-      if (sections) {
-        sections.forEach(section => {
-          observer.unobserve(section);
-        });
-      }
+      sections.forEach(section => {
+        observer.unobserve(section);
+      });
     };
   }, []);
   

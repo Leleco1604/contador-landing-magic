@@ -109,6 +109,124 @@
     animation: fade-in 0.5s 0.6s forwards ease-out;
   }
   
+  /* Definindo a animação fade-in que estava faltando */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Adiciona classe para animação */
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+  
+  /* Adiciona classes de cores personalizadas */
+  .bg-accountant-50 {
+    background-color: #f8fafc;
+  }
+  
+  .bg-accountant-100 {
+    background-color: #f1f5f9;
+  }
+  
+  .bg-accountant-200 {
+    background-color: #e2e8f0;
+  }
+  
+  .bg-accountant-300 {
+    background-color: #cbd5e1;
+  }
+  
+  .bg-accountant-400 {
+    background-color: #94a3b8;
+  }
+  
+  .bg-accountant-500 {
+    background-color: #64748b;
+  }
+  
+  .bg-accountant-600 {
+    background-color: #475569;
+  }
+  
+  .bg-accountant-700 {
+    background-color: #334155;
+  }
+  
+  .bg-accountant-800 {
+    background-color: #1e293b;
+  }
+  
+  .bg-accountant-950 {
+    background-color: #0f172a;
+  }
+  
+  .text-accountant-50 {
+    color: #f8fafc;
+  }
+  
+  .text-accountant-100 {
+    color: #f1f5f9;
+  }
+  
+  .text-accountant-200 {
+    color: #e2e8f0;
+  }
+  
+  .text-accountant-300 {
+    color: #cbd5e1;
+  }
+  
+  .text-accountant-400 {
+    color: #94a3b8;
+  }
+  
+  .text-accountant-500 {
+    color: #64748b;
+  }
+  
+  .text-accountant-600 {
+    color: #475569;
+  }
+  
+  .text-accountant-700 {
+    color: #334155;
+  }
+  
+  .text-accountant-800 {
+    color: #1e293b;
+  }
+  
+  .text-accountant-900 {
+    color: #0f172a;
+  }
+  
+  .text-accountant-950 {
+    color: #0f172a;
+  }
+  
+  .border-accountant-100 {
+    border-color: #f1f5f9;
+  }
+  
+  .border-accountant-200 {
+    border-color: #e2e8f0;
+  }
+  
+  .border-accountant-700 {
+    border-color: #334155;
+  }
+  
+  .border-accountant-800 {
+    border-color: #1e293b;
+  }
+  
   /* Glass effect */
   .glass {
     @apply bg-white bg-opacity-70 backdrop-blur-md;
@@ -152,5 +270,22 @@
     width: 100%;
     left: 0;
     right: auto;
+  }
+  
+  /* Animação pulse suave */
+  @keyframes pulse-soft {
+    0% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.7;
+    }
+  }
+  
+  .animate-pulse-soft {
+    animation: pulse-soft 2s infinite ease-in-out;
   }
 }
